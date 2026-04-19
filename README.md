@@ -62,7 +62,7 @@ Aplikasi ini dibuat sebagai **Project 1 mata kuliah Advanced Native Mobile Progr
 Project ini disimpan menggunakan Git dan GitHub sesuai ketentuan Project 1 ANMP.
 
 Link Repository:  
-https://github.com/username/HabitTracker
+https://github.com/vivian-sm/HabitTracker
 
 ---
 
