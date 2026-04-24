@@ -45,7 +45,7 @@ Aplikasi ini dibuat sebagai **Project 1 mata kuliah Advanced Native Mobile Progr
 - Bahasa Pemrograman: Kotlin
 - Arsitektur: MVVM (Model–View–ViewModel)
 - Navigation: Android Navigation Component
-- Penyimpanan Data: External Data via API (Volley + GSON)
+- Penyimpanan Data: In-memory Data Storage menggunakan Singleton
 - Version Control: Git dan GitHub
 - IDE: Android Studio
 
