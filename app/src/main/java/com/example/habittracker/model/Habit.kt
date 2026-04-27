@@ -1,7 +1,7 @@
 package com.example.habittracker.model
 
 import android.text.TextUtils.isEmpty
-import com.example.habittracker.model.values.habit.HabitIcon
+import com.example.habittracker.model.Values.habit.HabitIcon
 
 class Habit(
     name: String,
