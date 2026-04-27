@@ -25,6 +25,13 @@ import androidx.compose.material.icons.filled.Savings
 import androidx.compose.material.icons.filled.Work
 //endregion
 
+/* NOTES:
+ * IDK if this considered illegal for the project,
+ * Because enum are taught in OOP Class
+ * So I think it's OKAY?
+ * It will make our life easier if it okay, HEHE
+ * Thank you.
+ */
 enum class HabitIcon(val value: String) {
     //region Health & Fitness
     RUNNING("directions_run"),
