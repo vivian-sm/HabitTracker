@@ -8,11 +8,11 @@ android {
         viewBinding = true
     }
 
-    namespace = "com.example.healthtracker"
+    namespace = "com.example.habittracker"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.healthtracker"
+        applicationId = "com.example.habittracker"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
