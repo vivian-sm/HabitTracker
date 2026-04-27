@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://upload.wikimedia.org/wikipedia/id/0/09/Logo_ubaya_lowres.jpg?_=20111012142128" width="120px"/>
+
 # HabitTracker 
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
@@ -7,7 +9,6 @@
 ![University Project](https://img.shields.io/badge/University-Project-orange?style=for-the-badge&logo=graduation-cap)
 ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Logo_Ubaya.png/320px-Logo_Ubaya.png" width="120px"/>
 </div>
 
 ## Overview
