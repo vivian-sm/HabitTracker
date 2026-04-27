@@ -8,5 +8,9 @@ class DailyRecord(var date: Date, var records:ArrayList<Record>) {
     fun updateProgress(habitSlug:String,amount:Int){
         records.find { it.habit.slug == habitSlug }?.progress += amount
     }
+
+    fun updateHabit(habitSlug:String,newHabit:Habit){
+        records.find { it.habit.slug == habitSlug }?.habit = newHabit
+    }
     //endregion
 }

@@ -31,25 +31,13 @@ class LocalDailyRecordRepository(private val context: Context) : DailyRecordRepo
         if (!file.exists()) return null
         return Json.decodeFromString(file.readText())
     }
-    //endregion
 
-    //region Record
-    override fun insertRecord(date: Date, record: Record) {
-        val dailyRecord = getDailyRecord(date) ?: DailyRecord(date, ArrayList())
-        dailyRecord.records.add(record)
-        saveDailyRecord(dailyRecord)
-    }
-
-    override fun deleteRecord(date: Date, habitSlug: String) {
-        val dailyRecord = getDailyRecord(date) ?: DailyRecord(date, ArrayList())
-        dailyRecord.records.removeIf { it.habit.slug == habitSlug }
-        saveDailyRecord(dailyRecord)
-    }
-
-    override fun updateRecord(date: Date, habitSlug: String, amount: Int) {
-        val dailyRecord = getDailyRecord(date) ?: return
-        dailyRecord.updateProgress(habitSlug, amount)
-        saveDailyRecord(dailyRecord)
+    override fun deleteDailyRecord(date: Date) {
+        val file = getFile(date)
+        if (file.exists()) {
+            file.delete()
+        }
     }
     //endregion
+
 }

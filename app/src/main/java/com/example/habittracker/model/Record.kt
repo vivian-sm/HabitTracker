@@ -2,7 +2,7 @@ package com.example.habittracker.model
 
 
 class Record(
-    val habit: Habit,
+    var habit: Habit,
     var progress: Int
 ) {
     //region Computed Field
