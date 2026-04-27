@@ -4,12 +4,7 @@ import android.text.TextUtils.isEmpty
 import com.example.habittracker.model.Values.habit.HabitIcon
 
 class Habit(
-    name: String,
-    description: String,
-    progress: Int = 0,
-    goal: Int,
-    unit: String,
-    icon: HabitIcon
+    name: String, description: String, progress: Int = 0, goal: Int, unit: String, icon: HabitIcon
 ) {
     //region Declaration
     var name: String = name
@@ -61,6 +56,17 @@ class Habit(
         }
 
     var icon: HabitIcon = icon
+
+    //region Computed Field
+    val slug: String
+        get() = name.lowercase().replace(" ", "_")
+
+    val processPercentage: Int
+        get() = (progress * 100) / goal
+
+    val isCompleted: Boolean
+        get() = (this.progress >= this.goal)
+    //endregion
     //endregion
 
     //region Init
@@ -90,12 +96,6 @@ class Habit(
     //endregion
 
     //region Utility
-    fun isCompleted(): Boolean {
-        return progress >= goal
-    }
 
-    fun getProgressPercentage(): Int {
-        return (progress * 100) / goal
-    }
     //endregion
 }
