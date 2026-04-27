@@ -11,8 +11,6 @@
     app:cardCornerRadius="12dp"
     app:cardElevation="4dp">
 
-    <!-- Left accent bar for completed state (green) -->
-
     <LinearLayout
         android:id="@+id/card"
         android:layout_width="match_parent"
@@ -23,14 +21,12 @@
         android:paddingEnd="16dp"
         android:paddingBottom="16dp">
 
-        <!-- Row 1: Icon + Name + Status Badge -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <!-- Icon background circle -->
             <FrameLayout
                 android:layout_width="52dp"
                 android:layout_height="52dp"
@@ -50,14 +46,12 @@
                     tools:src="@android:drawable/ic_menu_compass" />
             </FrameLayout>
 
-            <!-- Name + Description block -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <!-- Name row: title + checkmark (for completed) -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,7 +88,6 @@
 
             </LinearLayout>
 
-            <!-- Status Badge -->
             <TextView
                 android:id="@+id/txtStatusBadge"
                 android:layout_width="wrap_content"
@@ -111,7 +104,6 @@
 
         </LinearLayout>
 
-        <!-- Row 2: Progress label + count -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -138,7 +130,6 @@
 
         </LinearLayout>
 
-        <!-- Row 3: Progress Bar -->
         <ProgressBar
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
@@ -150,7 +141,6 @@
             android:progressBackgroundTint="@color/gray_progress_bg"
             android:progressTint="@color/purple_primary" />
 
-        <!-- Row 4: Minus + Plus buttons (right-aligned) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -171,7 +161,6 @@
                 android:textColor="@color/gray_text"
                 android:textSize="20sp" />
 
-            <!-- Plus button -->
             <Button
                 android:id="@+id/btnIncrement"
                 style="?android:attr/borderlessButtonStyle"
