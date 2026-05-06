@@ -65,7 +65,7 @@ class CreateHabitFragment : Fragment() {
             "Read Book",
             "Listen Music",
             "Go Outside",
-            "Take Care of Pets",
+            "Take Care of Pet",
             "Mental Health",
             "Eat Meals",
             "Running",
@@ -73,9 +73,9 @@ class CreateHabitFragment : Fragment() {
             "Save Money",
             "Daily Schedule",
             "Meditation",
-            "Complete Tasks",
+            "Complete Task",
             "Walking",
-            "Wash Hands",
+            "Wash Hand",
             "Work"
         )
 
